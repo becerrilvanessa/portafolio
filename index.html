@@ -8,12 +8,534 @@
     <link rel="stylesheet" href="home.css">
      <!--Esta etiqueta es para poder poner stilos de forma interna para después pasarlo a un CSS-->
     <style>
+ /* contenedor y navbar */
+.contenedor{
+    width: 100%;
+    max-width:1380px;
+    margin: 0 auto;
+}
+.header{
+    background-color:black;
+    height: 50px;
+}
+
+.header a{
+    text-decoration: none;
+    color:white;
+    font-family:monospace;
+}
+
+.logo-nav-contenedor{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10px;
+
+}
+.logo{
+    font-family:monospace;
+    font-size:25px;
+    position: relative;
+    left: 80px;
+}
+
+.navegador ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.navegador ul li{
+    display: inline-block;
+}
+.navegador ul li a{
+    display:block;
+    padding: 0.5rem 1.2rem;
+    
+}
+ /* aqui termina contenedor y navbar */
+.container{
+    height: 655px;
+    position: relative;
+    margin-top: -50px;
+   
+    background-color: #19132D;
+
+}
+
+.titular{
+   font-size: 40px;
+   font-family:monospace;
+    position: relative;
+    top: 200px;
+    left: 140px;
+    color:#85283C;
+    z-index: 2;
+    
+  
 
 
-    </style>
+}
+
+.parrafo1{
+   
+    width: 500px;
+    height: 130px;
+    position: relative;
+    top: 230px;
+    left: 150px;
+    color:#BD3957;
+    z-index: 2;
+    font-family:monospace;
+
+}
+
+.portada img{
+  
+    position: relative;
+    width: 1200px;
+    height: 650px;
+    top: -250px;
+    left: 200px;
+    z-index: 1;
+
+}
+.botoninit{
+    display: block;
+    width: 150px;
+    height: 50px;
+    font-family:monospace;
+    font-size: 10px;
+    background-color:#85283C;
+    border-radius: 10px;
+    position: relative;
+    left: 150px;
+    top: 250px;
+    z-index: 2;
+}
+
+.botoninit h1{
+    color:#19132D;
+    font-family:monospace;
+    font-size: 25px;
+    float: left;
+    clear: both;
+    position:relative;
+    top: -5px;
+    left: 45px;
+   }
+
+/* aqui termina primera pagina*/
+.container2{
+    height: 615px;
+    position: relative;
+    background-color:#b4aad4;
+    top: -30px;
+
+
+}/* aqui comienza contenedor uno de formacion personal*/
+.fp{
+    color:#85283C;
+    position: relative;
+    left: 600px;
+    top: 20px;
+   
+
+}
+.fp h3{
+    font-size: 30px;
+    font-family:monospace;
+}
+.fila1{
+    height: 455px;
+    position: relative;
+    width: 675px;
+    background-color:#b4aad4;
+    top: 20px;
+    left: 135px;
+}
+
+
+.f1 h3{
+
+ font-size: 18px;
+ font-family:monospace;
+ color:#19132D;
+ 
+}
+.f1{
+    background-color:#bfb2e9;
+    top: 20px;
+ 
+    position: relative;
+    left: 10px;
+    top: 20px; 
+    width: 650px;
+  
+}
+.bott{
+    background-color:#b4aad4;
+    position: relative;
+    left: 10px;
+    width: 650px;
+    top: 5px;
+ 
+
+}
+.bott h4{
+    
+    font-size: 14px;
+ font-family:monospace;
+}
+
+
+.par1{
+    background-color:#b4aad4;
+    position: relative;
+    left: 10px;
+    top: 5px;
+    height: 100px;
+    width: 650px;
+}
+
+.par1 p{
+     
+    font-size: 14px;
+ font-family:monospace;
+}
+/* aqui fprmacion profesional 2*/
+.f2{
+    background-color:#bfb2e9;
+    position: relative;
+    left: 10px;
+    top: -10px; 
+    width: 650px;
+}
+.f2 h3{
+    font-size: 18px;
+    font-family:monospace;
+    top: 10px;
+}
+.univ{
+    background-color:#b4aad4;  
+    position: relative;
+    left: 10px;
+    width: 650px;
+    top: -25px;
+
+}
+
+.univ h4{
+    font-size: 14px;
+    font-family:monospace;
+    top: 10px;
+}
+.par2{
+    background-color:#b4aad4;
+    position: relative;
+    left: 10px;
+    top: -30px;
+    height: 60px;
+    width: 650px;
+}
+.par2 p {
+    font-size: 14px;
+    font-family:monospace;
+  
+}
+/* aqui formacion profesional 3*/
+.f3{
+    background-color: azure;
+    position: relative;
+    left: 10px;
+    top: -40px; 
+    width: 650px;
+}
+.prep{
+    background-color:aqua;
+    position: relative;
+    left: 10px;
+    width: 650px;
+    top: -60px;
+}
+.par3{
+    background-color:blueviolet;
+    position: relative;
+    left: 10px;
+    top: -80px;
+    height: 60px;
+    width: 650px;
+}
+.fila2{
+    height: 450px;
+    position: relative;
+    width: 475px;
+    background-color:#85283C;
+    top: -460px;
+    left: 950px;
+}
+
+.fecha1{
+    background-color:blueviolet;
+    position: relative;
+    top: 20px;
+    height: 20px;
+    width: 475px;  
+}
+
+.fecha2{
+    background-color:blueviolet;
+    position: relative;
+    top: 170px;
+    height: 20px;
+    width: 475px;  
+}
+
+.fecha3{
+    background-color:blueviolet;
+    position: relative;
+    top: 283px;
+    height: 20px;
+    width: 475px;  
+}
+
+
+
+
+/* experiencia laboral  */
+.container3{
+    height:680px;
+    position: relative;
+    background-color:aliceblue;
+    top: -40px;
+
+
+}
+.exp{
+    color:#85283C;
+    position: relative;
+    left: 600px;
+    top: 20px;
+}
+
+.exp h3{
+    font-size: 30px;
+}
+
+.expf1{
+    height: 530px;
+    position: relative;
+    width: 700px;
+    background-color:#85283C;
+    top: 20px;
+    left: 155px;
+}
+
+.ex1{
+
+    background-color: azure;
+    position: relative;
+    left: 10px;
+    top: 20px; 
+    width: 650px;
+
+
+}
+
+.cudi{
+    background-color:aqua;
+    position: relative;
+    left: 10px;
+    width: 650px;
+ 
+
+}
+.lis1{
+    background-color:blueviolet;
+    position: relative;
+    left: 10px;
+    top: -20px;
+    height: 150px;
+    width: 650px;
+}
+.lis1 ul{
+  
+    position: relative;
+   text-decoration: none;
+    top: 20px;
+ 
+}
+
+.cudi{
+    background-color:aqua;
+    position: relative;
+    left: 10px;
+    width: 650px;
+ 
+
+}
+.ex2 {background-color: azure;
+    position: relative;
+    left: 10px;
+    top: -20px; 
+    width: 650px;
+
+
+}
+
+.cd{
+    background-color:aqua;
+    position: relative;
+    left: 10px;
+    width: 650px;
+    top: -40px;
+ 
+
+}
+
+.lis2{
+    background-color:blueviolet;
+    position: relative;
+    left: 10px;
+    top: -60px;
+    height: 80px;
+    width: 650px;
+}
+.lis2 ul{
+  
+    position: relative;
+   text-decoration: none;
+    top: 20px;
+ 
+}
+.ex3{
+    background-color: azure;
+    position: relative;
+    top:-60px;
+    left: 10px;
+ 
+    width: 650px;
+    height: 20px;
+
+}
+
+.lis3{
+    background-color:blueviolet;
+    position: relative;
+    left: 10px;
+    top: -60px;
+    height: 100px;
+    width: 650px;
+}
+.lis3 ul{
+  
+    position: relative;
+   text-decoration: none;
+    top: 20px;
+ 
+}
+
+.fila3{
+    height: 450px;
+    position: relative;
+    width: 475px;
+    background-color:#85283C;
+    top: -650px;
+    left: 950px;
+}
+.fech1{
+    background-color:blueviolet;
+    position: relative;
+    top: 15px;
+    height: 20px;
+    width: 475px;  
+}
+
+.fech2{
+    background-color:blueviolet;
+    position: relative;
+    top: 185px;
+    height: 20px;
+    width: 475px;  
+}
+/*habilidades tecnicas*/
+
+
+.container4{
+
+    height: 615px;
+    position: relative;
+    background-color:beige;
+    top: -530px;
+
+
+}
+.ht{
+    color: #85283C;
+    position: relative;
+    left: 600px;
+    top: 20px;
+}
+
+.subtitulos{
+    height: 515px;
+    width: 215px;
+    position: relative;
+    background-color:#85283C;
+    top: 50px;
+    left: 150px;
+
+}
+
+.back{
+    height: 150px;
+    width: 215px;
+    position: relative;
+    background-color:#19132D;
+    top: -18px;
+ 
+
+}
+
+.front{
+    height: 150px;
+    width: 215px;
+    position: relative;
+    background-color:aliceblue; 
+
+}
+
+.skills{
+    height: 150px;
+    width: 215px;
+    position: relative;
+    background-color:aliceblue; 
+    top: -35px;
+
+}
+.conthab{
+    height: 500px;
+    width: 925px;
+    position: relative;
+    background-color:aliceblue; 
+    top: -475px;
+    left: 500px;
+}
+.confront{
+    height: 150px;
+    width: 925px;
+    position: relative;
+    background-color:#19132D; 
+
+}
+
+
+
+</style>
 </head>
 <body> 
 <header class="header">
+   
 <div class="contenedor logo-nav-contenedor">
     <a href="#" class="logo">Portafolio</a>
     <nav class="navegador">
@@ -31,23 +553,33 @@
 
 <!--Aqui voy a crear la parte principal del home-->
 <main class="main">
-    <div class="container"> <!--Este seria todo el contenedor de la pantalla 1-->
-    <div class="titular"><h3>¡Hola Mundo!</h3></div>
+   <div class="container"> <!--Este seria todo el contenedor de la pantalla 1-->
+    <div class="titular"><h3>¡Hola, Mundo!</h3></div>
     
     <div class="parrafo1">
-       <p>
-       Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y 
-       los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue
-       </p>
-   </div>  
+           <p>
+           Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las
+            industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y 
+           los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de 
+           relleno en documentos electrónicos, quedando esencialmente igual al original. Fue
+           </p>
+    </div>  
+    <div class="botoninit"><h1>Init</h1></div>
+    
+     <div class="portada"> <img src="portada12.png" alt="portada de presentacion"></div>
+
+
+  
 </div> 
 
-<div class="container2">
+<div class="container2"><!--aqui va el contenedor de formacion profesional-->
+
 <div class="fp"><h3>Mi Formacion Profesional</h3></div>
 <!--formacion1-->
+<div class="fila1"><!--aqui va el contenedor de formacion profesional-->
 <div class="f1"><h3>Desarrollador Java FullStack Jr</h3></div>
 <div class="bott"><h4>Bootcamp Generatión México</h4></div>
-<div class="par1"><p>•Participación en el programa de entrenamiento intensivo para jóvenes, diseñado para preparar a los participantes para un puesto en el sector de TI, mediante la enseñanza sobre codificación, programación, profesionalismo, persistencia y las mentalidades y habilidades conductuales esenciales para lograr el éxito laboral.</p></div>
+<div class="par1"><p>Participación en el programa de entrenamiento intensivo para jóvenes, diseñado para preparar a los participantes para un puesto en el sector de TI, mediante la enseñanza sobre codificación, programación, profesionalismo, persistencia y las mentalidades y habilidades conductuales esenciales para lograr el éxito laboral.</p></div>
 <!--formacion2-->
 <div class="f2"><h3>Licenciatura en Diseño </h3></div>
 <div class="univ"><h4>Universidad Autonoma Metropolitana Cuajimalpa</h4></div>
@@ -58,11 +590,21 @@
 <div class="prep"><h4>Centro de estudios Cientificos y Técnologicos Miguel Bernard Cecyt No. 2</h4></div>
 <div class="par3"><p>Especialidad en comprender el proceso de diseño para dar soluciones efectivas y en el uso de las herramientas y desarrollo grafico de identidades corporativas y desarrollo de proyectos   
 </p></div>
+
+</div>
+<div class="fila2">
+    <div class="fecha1"><h5>Agosto - Noviembre 2022</h5> </div>
+    <div class="fecha2"><h5>2015 - Titulo en trámite</h5></div>
+    <div class="fecha3"><h5>2012 - 2015</h5></div>
+</div>
+
+
 </div>
 <!--Aqui mi experincia laboral-->
 <div class="container3">
 <div class="exp"><h3>Mi Experiencia Laboral</h3></div>
 <!--experiencia1-->
+<div class="expf1">
 <div class="ex1"><h3>Servicio social: Encargada del área de diseño</h3></div>
 <div class="cudi"><h4>La Corporación Universitaria para el Desarrollo de Internet 
     (CUDI) Ciudad de México  </h4></div>
@@ -79,7 +621,7 @@
 
 <!--experiencia2-->
 <div class="ex2"><h3>Bootcam Generation México </h3></div>
-<div class="cudi"><h4> Ciudad de México </h4></div>
+<div class="cd"><h4> Ciudad de México </h4></div>
 <div class="lis2">
 
     <ul>
@@ -95,15 +637,54 @@
 <div class="lis3">
 
     <ul>
-        <li> 1.1 Trabaje con softwares como HTML y CSS  </li>
-        <li>1.2 Maneje el repositorio en github </li>
-        <li>1.2.2 ¿Quieres ver mi repositorio? link</li>
-        <li>1.3 Desarrolle y puli hábilidades blandas </li>
+        <li> 2.1 Trabaje con softwares como HTML y CSS  </li>
+        <li>2.2 Maneje el repositorio en github </li>
+        <li>2.2.2 ¿Quieres ver mi repositorio? link</li>
+        <li>2.3 Desarrolle y puli hábilidades blandas </li>
         
     </ul>
 </div>
+</div>
+
+<div class="filaex">
+    <div class="exfecha"> 
+
+    </div>
+
+</div>
+</div>
+<div class="fila3">
+    <div class="fech1"><h5>Agosto - Noviembre 2022</h5> </div>
+    <div class="fech2"><h5>Agosto-Noviembre 2022</h5></div>
+    
+</div>
 
 <!--Aqui mis habilidads -->
+
+<div class="container4">
+    <div class="ht"><h1>Mis Habilidades Técnicas</h1></div>
+    <div class="subtitulos">
+        <div class="front"><h3>FrontEnd </h3></div>
+        <div class="back"><h3>BackEnd </h3></div>
+        <div class="skills"><h3>SoftSkills </h3></div>
+
+    </div>
+
+    <div class="conthab">
+        <div class="confront">
+
+            <div>html</div>
+            <div>figma</div>
+            <div>css</div>
+            <div>JavaScript</div>
+        </div>
+
+
+    </div>
+
+
+
+</div>
 </main>
 
 
